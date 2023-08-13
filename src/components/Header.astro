@@ -6,10 +6,10 @@ import Hamburger from "./Hamburger.astro";
 <div
   class="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white relative z"
 >
-  <h1 class="w-full text-3xl text-[#00df9a] pl-10 font-bold mobileTitle">
+  <h1 class="w-full text-3xl text-[#00df9a] pl-10 font-bold relative z-10">
     Big Data Inc.
   </h1>
-  <ul class="flex nav-links">
+  <ul class="flex flex-row nav-links">
     <a class="p-4 cursor-pointer">Home</a>
     <a class="p-4 cursor-pointer">Company</a>
     <a class="p-4 cursor-pointer">Resources</a>
@@ -31,11 +31,6 @@ import Hamburger from "./Hamburger.astro";
 <style>
   .mobileNav {
     top: 5rem;
-  }
-
-  .mobileTitle {
-    position: relative;
-    z-index: 1;
   }
 
   .mobileNav-links {
