@@ -1,0 +1,30 @@
+---
+import Hamburger from "./Hamburger.astro";
+import "../styles/Header.css";
+---
+
+<Hamburger />
+<div
+  class="flex justify-between items-center h-24 max-w-[1240px] mx-auto text-white relative z"
+>
+  <h1 class="w-full text-3xl text-[#00df9a] pl-10 font-bold mobileTitle">
+    Big Data Inc.
+  </h1>
+  <ul class="flex nav-links">
+    <a class="p-4">Home</a>
+    <a class="p-4">Company</a>
+    <a class="p-4">Resources</a>
+    <a class="p-4">About</a>
+    <a class="p-4">Contact</a>
+  </ul>
+
+  <div class="fixed left-0 top-0 w-[60%] h-full mobileNav">
+    <ul class="p-4 uppercase mobileNav-links font-bold">
+      <a class="p-4 border-b border-gray-600">Home</a>
+      <a class="p-4 border-b border-gray-600">Company</a>
+      <a class="p-4 border-b border-gray-600">Resources</a>
+      <a class="p-4 border-b border-gray-600">About</a>
+      <a class="p-4">Contact</a>
+    </ul>
+  </div>
+</div>
